@@ -1,0 +1,163 @@
+{
+  "theme": {
+    "mode": "dark",
+    "archetype": "5 (Luxury)",
+    "description": "Ultra-premium, cinematic luxury dark theme inspired by Apple's product landing pages. Deep blacks, crisp white typography, frosted glass surfaces, and subtle ambient glows."
+  },
+  "typography": {
+    "font_families": {
+      "headings": "Inter, 'SF Pro Display', sans-serif",
+      "body": "Inter, 'SF Pro Text', sans-serif",
+      "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-white",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight text-[#F5F5F7]",
+      "h3": "text-2xl md:text-3xl font-medium tracking-tight text-[#F5F5F7]",
+      "body_lg": "text-lg md:text-xl font-normal leading-relaxed text-[#86868B]",
+      "body": "text-base font-normal leading-relaxed text-[#86868B]",
+      "overline": "text-xs font-semibold tracking-[0.2em] uppercase text-[#86868B]"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#000000",
+      "surface_1": "#111111",
+      "surface_2": "#1C1C1E",
+      "glass": "rgba(28, 28, 30, 0.5)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#F5F5F7",
+      "muted": "#86868B",
+      "inverse": "#000000"
+    },
+    "accent": {
+      "primary": "#0071E3",
+      "primary_hover": "#0077ED",
+      "glow": "rgba(0, 113, 227, 0.3)"
+    },
+    "border": {
+      "subtle": "rgba(255, 255, 255, 0.1)",
+      "strong": "rgba(255, 255, 255, 0.2)"
+    }
+  },
+  "surfaces": {
+    "glassmorphism": "bg-[#1C1C1E]/50 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "card_hover": "hover:bg-[#1C1C1E]/80 transition-colors duration-500",
+    "glow_effect": "relative before:absolute before:inset-0 before:-z-10 before:bg-[#0071E3]/20 before:blur-3xl before:rounded-full"
+  },
+  "layout_and_spacing": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FFFFFF] text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform duration-300",
+      "secondary": "bg-[#1C1C1E] text-white border border-white/10 px-6 py-3 rounded-full font-medium hover:bg-white/10 transition-colors duration-300"
+    },
+    "navbar": "fixed top-0 w-full z-50 bg-[#000000]/70 backdrop-blur-xl border-b border-white/10 h-16 flex items-center justify-between px-6 md:px-12",
+    "footer": "bg-[#111111] py-16 px-6 md:px-12 text-sm text-[#86868B] border-t border-white/10",
+    "feature_card": "flex flex-col p-8 rounded-3xl bg-[#111111] border border-white/5 hover:border-white/15 transition-all duration-500 overflow-hidden relative",
+    "pricing_card": "p-8 rounded-3xl border border-white/10 bg-[#111111] flex flex-col gap-6",
+    "pricing_card_featured": "p-8 rounded-3xl border border-[#0071E3]/50 bg-[#1C1C1E] relative shadow-[0_0_40px_rgba(0,113,227,0.15)] flex flex-col gap-6"
+  },
+  "animations": {
+    "scroll_reveal": {
+      "initial": { "opacity": 0, "y": 40 },
+      "whileInView": { "opacity": 1, "y": 0 },
+      "viewport": { "once": true, "margin": "-100px" },
+      "transition": { "duration": 0.8, "ease": [0.16, 1, 0.3, 1] }
+    },
+    "hero_parallax": {
+      "description": "Use Framer Motion useScroll and useTransform to map scroll Y to translateY and scale of the hero MacBook image."
+    },
+    "hover_lift": "hover:-translate-y-2 transition-transform duration-500",
+    "progress_bar": "initial width 0, animate to target width while in view with duration 1.5s ease-out"
+  },
+  "media": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxtYWNib29rJTIwcHJvJTIwZGFyayUyMHN0dWRpb3xlbnwwfHx8fDE3ODI3NjEwNjd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "MacBook edge glowing in the dark, perfect for the dramatic hero section reveal.",
+        "category": "Hero Device"
+      }
+    ],
+    "features": [
+      {
+        "url": "https://images.unsplash.com/photo-1542393545-10f5cde2c810?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxtYWNib29rJTIwc2NyZWVuJTIwY2xvc2UlMjB1cCUyMGRhcmt8ZW58MHx8fHwxNzgyNzYxMDY3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Colorful vibrant screen against dark background, ideal for the 'Liquid Retina Display' feature card.",
+        "category": "Feature Image"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxtYWNib29rJTIwc2NyZWVuJTIwY2xvc2UlMjB1cCUyMGRhcmt8ZW58MHx8fHwxNzgyNzYxMDY3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Sleek silver profile of MacBook, ideal for the 'Ultra-Light Aluminum Design' feature.",
+        "category": "Feature Image"
+      }
+    ],
+    "performance": [
+      {
+        "url": "https://images.unsplash.com/photo-1650661926447-9efb2610f64c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxtYWNib29rJTIwcHJvJTIwZGFyayUyMHN0dWRpb3xlbnwwfHx8fDE3ODI3NjEwNjd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "MacBook set up in a dark studio/desk environment, perfect for the split-screen performance section.",
+        "category": "Performance Showcase"
+      }
+    ],
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1635657987517-c143fad8079c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxtYWNib29rJTIwc2NyZWVuJTIwY2xvc2UlMjB1cCUyMGRhcmt8ZW58MHx8fHwxNzgyNzYxMDY3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Glowing Apple logo from back of the laptop.",
+        "category": "Carousel Image"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1420406676079-b8491f2d07c8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxtYWNib29rJTIwcHJvJTIwZGFyayUyMHN0dWRpb3xlbnwwfHx8fDE3ODI3NjEwNjd8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Silver MacBook floating gracefully in void.",
+        "category": "Carousel Image"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxtYWNib29rJTIwc2NyZWVuJTIwY2xvc2UlMjB1cCUyMGRhcmt8ZW58MHx8fHwxNzgyNzYxMDY3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Close up angled shot of grey and black keyboard/screen.",
+        "category": "Carousel Image"
+      }
+    ],
+    "testimonials": [
+      {
+        "url": "https://images.unsplash.com/photo-1574281570877-bd815ebb50a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGRhcmt8ZW58MHx8fHwxNzgyNzYxMDY3fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Man with crossed arms in dark professional lighting.",
+        "category": "Avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/17685845/pexels-photo-17685845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Formal portrait of a young man in a suit.",
+        "category": "Avatar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/12396627/pexels-photo-12396627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Elegant portrait of smiling woman in business attire.",
+        "category": "Avatar"
+      }
+    ]
+  },
+  "testing_attributes": {
+    "instructions": "All interactive and key informational elements MUST include a 'data-testid' attribute.",
+    "examples": [
+      "data-testid='hero-buy-button'",
+      "data-testid='hero-explore-button'",
+      "data-testid='pricing-pro-tier-button'",
+      "data-testid='newsletter-submit-button'",
+      "data-testid='nav-pricing-link'"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use standard JS, no TypeScript/TSX.",
+    "Implement smooth scrolling (Lenis) if possible, but definitely utilize framer-motion for heavy lifting of scroll-based fade/transforms.",
+    "Apply stark Apple-level whitespace; use massive padding between sections (py-32).",
+    "Features Section should use a Bento Box approach with 4 distinct items having frosted glass overlays.",
+    "For the Performance stats, use framer-motion animate to count up the numbers or fill the progress bars dynamically.",
+    "Product Carousel must allow users to swipe/scroll through the 'gallery' images horizontally with slight scale down on inactive cards.",
+    "Ensure the hero headline uses tight tracking and heavy weight (e.g., text-6xl tracking-tighter).",
+    "Never use pure black for cards on a pure black background—always use a slight offset like #111111 or #1C1C1E, or a glassmorphic border.",
+    "The middle pricing card MUST be highlighted with a soft blue glow outline or border (#0071E3) and stand out from the other two.",
+    "Ensure 'data-testid' attributes are attached to all actionable buttons, links, and forms for automated testing."
+  ]
+}
